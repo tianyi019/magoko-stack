@@ -20,5 +20,12 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
     - uses: actions/checkout@v2
+      with:
+        repository: deepinthink-magoko/magoko-parent
+        path: deepinthink-magoko/magoko-parent
+    - run: |
+        cd deepinthink-magoko/magoko-parent
+        ./mvnw clean install -B -U
+    - uses: actions/checkout@v2
     - name: Build with Maven
       run: ./mvnw clean install -B -U
