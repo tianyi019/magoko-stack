@@ -1,7 +1,3 @@
-# MagOKO Stack
-Community-Driven Roll-Over Game Server Development solution for Java Developers based on DEEPINTHINK MagOKO Project.
-
-## License
 Copyright 2021-present [DEEPINTHINK](https://github.com/deepinthink).
  All rights reserved.
 
