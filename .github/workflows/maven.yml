@@ -19,13 +19,28 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
-    - uses: actions/checkout@v2
+    - name: Checkout [deepinthink-magoko/magoko-parent]
+      uses: actions/checkout@v2
       with:
         repository: deepinthink-magoko/magoko-parent
         path: deepinthink-magoko/magoko-parent
-    - run: |
+    - name: Install [deepinthink-magoko/magoko-parent]
+      run: |
         cd deepinthink-magoko/magoko-parent
         ./mvnw clean install -B -U
-    - uses: actions/checkout@v2
-    - name: Build with Maven
+    - name: Checkout [deepinthink-magoko/magoko-login]
+      uses: actions/checkout@v2
+      with:
+        repository: deepinthink-magoko/magoko-login
+        path: deepinthink-magoko/magoko-login
+    - name: Install [deepinthink-magoko/magoko-login]
+      run: |
+        cd deepinthink-magoko/magoko-login
+        ./mvnw clean install -B -U
+    - name: Checkout [deepinthink-magoko/magoko-stack]
+      uses: actions/checkout@v2
+    - name: Checkout codingstyle
+      run: |
+        ./mvnw spotless:check
+    - name: Build [deepinthink-magoko/magoko-stack]
       run: ./mvnw clean install -B -U

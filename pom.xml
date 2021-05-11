@@ -18,5 +18,6 @@
   <modules>
     <module>magoko-stack-bom</module>
     <module>magoko-stack-build-parent</module>
+    <module>magoko-stack-login-server</module>
   </modules>
 </project>
