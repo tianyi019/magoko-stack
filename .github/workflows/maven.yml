@@ -28,6 +28,15 @@ jobs:
       run: |
         cd deepinthink-magoko/magoko-parent
         ./mvnw clean install -B -U
+    - name: Checkout [deepinthink-magoko/magoko-config]
+      uses: actions/checkout@v2
+      with:
+        repository: deepinthink-magoko/magoko-config
+        path: deepinthink-magoko/magoko-config
+    - name: Install [deepinthink-magoko/magoko-config]
+      run: |
+        cd deepinthink-magoko/magoko-config
+        ./mvnw clean install -B -U
     - name: Checkout [deepinthink-magoko/magoko-login]
       uses: actions/checkout@v2
       with:
