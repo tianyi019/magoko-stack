@@ -37,6 +37,15 @@ jobs:
       run: |
         cd deepinthink-magoko/magoko-login
         ./mvnw clean install -B -U
+    - name: Checkout [deepinthink-magoko/magoko-pay]
+      uses: actions/checkout@v2
+      with:
+        repository: deepinthink-magoko/magoko-pay
+        path: deepinthink-magoko/magoko-pay
+    - name: Install [deepinthink-magoko/magoko-pay]
+      run: |
+        cd deepinthink-magoko/magoko-pay
+        ./mvnw clean install -B -U
     - name: Checkout [deepinthink-magoko/magoko-stack]
       uses: actions/checkout@v2
     - name: Checkout codingstyle

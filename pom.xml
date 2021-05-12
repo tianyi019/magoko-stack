@@ -15,9 +15,35 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>magoko-stack-parent</name>
   <description>MagOKO Stack :: Parent</description>
+  <url>https://github.com/deepinthink/magoko-stack</url>
+  <inceptionYear>2021</inceptionYear>
+  <organization>
+    <name>DEEPINTHINK</name>
+    <url>https://github.com/deepinthink</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>tingyanshen</id>
+      <name>Tingyan Shen</name>
+      <email>tingyan.shen@gmail.com</email>
+      <roles>
+        <role>maintainer</role>
+        <role>committer</role>
+      </roles>
+      <timezone>+8</timezone>
+    </developer>
+  </developers>
   <modules>
     <module>magoko-stack-bom</module>
     <module>magoko-stack-build-parent</module>
     <module>magoko-stack-login-server</module>
+    <module>magoko-stack-pay-server</module>
   </modules>
 </project>
