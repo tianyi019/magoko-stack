@@ -20,6 +20,7 @@
     <dep.magoko-login.version>0.0.1-SNAPSHOT</dep.magoko-login.version>
     <dep.magoko-pay.version>0.0.1-SNAPSHOT</dep.magoko-pay.version>
     <dep.magoko-tinker.version>0.0.1-SNAPSHOT</dep.magoko-tinker.version>
+    <dep.magoko-admin.version>0.0.1-SNAPSHOT</dep.magoko-admin.version>
     <parameter.license-header.location>
       ${basedir}/../magoko-stack-build-parent/src/license-header.txt
     </parameter.license-header.location>
@@ -65,6 +66,13 @@
         <groupId>org.deepinthink.magoko</groupId>
         <artifactId>magoko-tinker-bom</artifactId>
         <version>${dep.magoko-tinker.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.magoko</groupId>
+        <artifactId>magoko-admin-bom</artifactId>
+        <version>${dep.magoko-admin.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

@@ -41,6 +41,7 @@
     </developer>
   </developers>
   <modules>
+    <module>magoko-stack-admin-server</module>
     <module>magoko-stack-bom</module>
     <module>magoko-stack-build-parent</module>
     <module>magoko-stack-config-server</module>
