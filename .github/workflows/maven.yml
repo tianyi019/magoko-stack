@@ -73,6 +73,15 @@ jobs:
       run: |
         cd deepinthink-magoko/magoko-admin
         ./mvnw clean install -B -U
+    - name: Checkout [deepinthink-magoko/magoko-broker]
+      uses: actions/checkout@v2
+      with:
+        repository: deepinthink-magoko/magoko-broker
+        path: deepinthink-magoko/magoko-broker
+    - name: Install [deepinthink-magoko/magoko-broker]
+      run: |
+        cd deepinthink-magoko/magoko-broker
+        ./mvnw clean install -B -U
     - name: Checkout [deepinthink-magoko/magoko-stack]
       uses: actions/checkout@v2
     - name: Checkout codingstyle
