@@ -1,5 +1,5 @@
 # MagOKO Stack [![Build](https://github.com/deepinthink/magoko-stack/actions/workflows/maven.yml/badge.svg)](https://github.com/deepinthink/magoko-stack/actions/workflows/maven.yml)
-Community-Driven Roll-Over Game Server Development solution for Java Developers based on DEEPINTHINK MagOKO Project.
+Community-Driven Game Server Development solution for Java Developers based on DEEPINTHINK MagOKO Project.
 
 ## License
 Copyright 2021-present [DEEPINTHINK](https://github.com/deepinthink).
